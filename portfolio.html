@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width", initial-scale="1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+        <script src="https://kit.fontawesome.com/a3677f4b6f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="portfolio/clearhub.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Front-end Developer</p>
+                    <h1>Hi,I'm <span>Ridwan</span><br> Oyenuga From Nigeria</h1>
+                </div>
+            </div>
+        </div>
+        <!------about--------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="portfolio/personal.png.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>My name is Oyenuga Ridwan. I study Computer Science in the Babcock University.
+                            I have been into Front-end Development for about 3 years. I have a broad experience on HTML an CSS.
+                            I then dived into Web designing in other to add to my knowledge.
+                        </p>
+                        <div class="tab-title " >
+                            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div> 
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                                <li><span>Web Developer</span><br>Developing Websites</li>
+                                <li><span>Web Management</span><br>Managing Websites</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2017 - Current</span><br>Freelancer</li>
+                                <li><span>2021 - Current</span><br>Web Manager at Sulaiman Oyenuga & Co</li>
+                            </ul>
+                        </div><div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021</span><br>Designing Web Interfaces Training</li>
+                                <li><span>2017</span><br>Developing Websites Training</li>
+                                <li><span>2021-2025</span><br>Computer Science Bsc. Babcock University</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------services-------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>I develop websites using a Client-model such as HTML, CSS, Java Script, Python,Java </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Web Designing</h2>
+                        <p>I use HTML, CSS and Java Script</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>UI/UX</h2>
+                        <p>User Interface Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------portfolio---------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="portfolio/tech2.jpg.jpg">
+                        <div class="layer">
+                            <h3>Social Media</h3>
+                            <p>
+                                The app connects you to talented people around the world.
+                                Download it on play store.
+                            </p>
+                            <a href="https://instagram.com/t.i.m.i_._?igshid=YmMyMTA2M2Y="><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="portfolio/tech1.jpg.jpg">
+                        <div class="layer">
+                            <h3>Learn Web Development</h3>
+                            <p>
+                                You can learn how to developt websites on this channel.
+                            </p>
+                            <a href="https://youtube.com/channel/UCbZZCDcc4rIRGsTGSmSF5eQ"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://youtube.com/channel/UCbZZCDcc4rIRGsTGSmSF5eQ"class="btn">See more</a>
+            </div>
+        </div>
+        <!--------contact------------>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>taonuga@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-square-alt"></i>+2349022013174</p>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/t.i.m.i_._?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/oyenugaridwan/"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100078274624721"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/ridwan-timilehin-oyenuga-a66b9224b"><i class="fa-brands fa-linkedin"></i></a>
+                        </div><br>
+                        <a  href="portfolio/mycv.png" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form onsubmit="sendEmail(); reset(); return false;">
+                            <input type="text" id="name" name="Name" placeholder="Your name" required>
+                            <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" id="message" rows="6" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <script src="https://smtpjs.com/v3/smtp.js"></script>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright O.Ridwan made with <i class="fa-solid fa-heart"></i> by Timingo</p>
+            </div>
+        </div>
+    <script src="portfolio.js">
+    </script>
+    </body>
+</html>
